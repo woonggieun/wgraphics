@@ -30,7 +30,8 @@ namespace WE
 			bool InitializeSwapChain(HWND hwnd, bool fullScreen, int width, int height, unsigned numerator, unsigned denominator);
 			bool InitializeDepthBuffer(int width, int height);
 			bool InitializeDepthStencilBuffer(void);
-			bool InitializeStencilView();
+			bool InitializeStencilView(void);
+			bool InitializeRasterizerState(void);
 			void InitializeViewport(int width, int height);
 			bool InitializeAlphaBlending(void);
 			bool InitializeZBuffer(void);
