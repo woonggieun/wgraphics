@@ -272,11 +272,35 @@ namespace WE
 
         void DXManager::BeginScene(float r, float g, float b, float a)
         {
+			float color[4];
 
+			//red
+			color[0] = r;
+			//green
+			color[1] = g;
+			//blue
+			color[2] = b;
+			//alpha
+			color[3] = a;
+
+            //clear the back buffer
+			m_deviceContext->ClearRenderTargetView(m_renderTargetView, color);
+
+			//clear the depth buffer
+			m_deviceContext->ClearDepthStencilView(m_depthStencilView, D3D11_CLEAR_DEPTH, 1.0f, 0);
         }
         void DXManager::EndScene(void)
         {
-
+			if (m_vsync_enabled)
+			{
+				//Lock to screen refresh rate.
+				m_swapChain->Present(1, 0);
+			}
+			else
+			{
+				//Present as fast as possible.
+				m_swapChain->Present(0, 0);
+			}
         }
 
         void DXManager::EnalbeAlphaBlending(bool enable)

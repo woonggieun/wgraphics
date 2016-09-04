@@ -6,7 +6,7 @@
 
 #include <Windows.h>
 #include "Debug.h"
-#include "Application.h"
+#include "FrameWork.h"
 
 
 int WINAPI WinMain(HINSTANCE instance, HINSTANCE prev, LPSTR cmdLine, int show)
@@ -14,16 +14,12 @@ int WINAPI WinMain(HINSTANCE instance, HINSTANCE prev, LPSTR cmdLine, int show)
 	DEBUG_LEAK_CHECKS(-1);
 	DEBUG_CREATE_CONSOLE();
 
-	WE::Application::InitData initData;
+	WE::Application::FrameWork frameWork;
 
-	initData.instance     = instance;
-	initData.isFullscreen = false;
-	initData.width        = 1280;
-	initData.height       = 720;
-	initData.title        = "WEngine";
-
-	WE::Application::Application app(initData);
-	app.Update();
-
+	if (frameWork.Initialize())
+	{
+		frameWork.Run();
+	}
+		
 	return 0;
 }

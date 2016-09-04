@@ -1,5 +1,5 @@
-#ifndef GRAPHICS_H
-#define GRAPHICS_H
+#ifndef DXMANAGER_H 
+#define DXMANAGER_H
 
 #include <dxgi.h>
 #include <d3dcommon.h>

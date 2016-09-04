@@ -67,15 +67,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Application.cpp" />
     <ClCompile Include="Debug.cpp" />
     <ClCompile Include="DXManager.cpp" />
+    <ClCompile Include="FrameWork.cpp" />
+    <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Application.h" />
     <ClInclude Include="Debug.h" />
     <ClInclude Include="DXManager.h" />
+    <ClInclude Include="FrameWork.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="SystemDef.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
