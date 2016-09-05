@@ -19,6 +19,8 @@ namespace WE
 				ChangeDisplaySettings(NULL, 0);
 			}
 
+			Engine::GetEngine()->Release();
+
 			UnregisterClass(m_applicationName, m_hInstance);
 			m_hInstance = NULL;
 		}

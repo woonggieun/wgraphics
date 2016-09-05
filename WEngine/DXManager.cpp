@@ -303,7 +303,7 @@ namespace WE
 			}
         }
 
-        void DXManager::EnalbeAlphaBlending(bool enable)
+        void DXManager::EnableAlphaBlending(bool enable)
         {
             float blendFactor[4];
             blendFactor[0] = 0.0f;

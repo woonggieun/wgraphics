@@ -19,7 +19,7 @@ namespace WE
 			void BeginScene(float r, float g, float b, float a);
 			void EndScene(void);
 
-			void EnalbeAlphaBlending(bool enable);
+			void EnableAlphaBlending(bool enable);
 			void EnableZBuffer(bool enable);
 
 			ID3D11Device* GetDevice(void);

@@ -2,12 +2,38 @@
 #define GRAPHICS_H
 
 #include "DXManager.h"
+#include "SystemDef.h"
 
-class Graphics
+namespace WE
 {
-public:
-	Graphics(void);
-	~Graphics(void);
-};
+	namespace Graphics
+	{
+		class Graphics
+		{
+		public:
+			Graphics(void);
+			~Graphics(void);
+
+			bool InitializeDX(HWND hwnd);
+
+			void Initialize(void);
+			void BeginScene(float r, float g, float b, float a);
+			void EndScene(void);
+
+			void EnableAlphaBlending(bool enable);
+			void EnableZBuffer      (bool enable);
+
+			//Gettors
+			WE::Graphics::DXManager* GetDXManager(void);
+			HWND GetHWND                         (void);
+			ID3D11Device* GetDevice              (void);
+			ID3D11DeviceContext* GetDeviceContext(void);
+
+		private:
+			DXManager* m_dxManager;
+			HWND       m_hwnd;
+		};
+	}
+}
 
 #endif

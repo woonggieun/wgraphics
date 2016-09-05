@@ -1,7 +1,8 @@
 #ifndef FRAMEWORK_H
 #define FRAMEWORK_H
 
-#include <Windows.h>
+
+#include "Engine.h"
 
 namespace WE
 {
