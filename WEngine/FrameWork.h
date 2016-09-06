@@ -1,3 +1,18 @@
+/*******************************************************************************
+
+filename    FrameWork.h
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+Header file for implementing framework functions.
+
+*******************************************************************************/
+
 #ifndef FRAMEWORK_H
 #define FRAMEWORK_H
 

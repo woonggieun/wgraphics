@@ -1,3 +1,19 @@
+/*******************************************************************************
+
+filename    DXManager.cpp
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+Implementation file for managing/using directX features in order to create
+window, initialization of basic part of graphics.
+
+*******************************************************************************/
+
 #include "DXManager.h"
 
 namespace WE
@@ -289,6 +305,7 @@ namespace WE
 			//clear the depth buffer
 			m_deviceContext->ClearDepthStencilView(m_depthStencilView, D3D11_CLEAR_DEPTH, 1.0f, 0);
         }
+
         void DXManager::EndScene(void)
         {
 			if (m_vsync_enabled)

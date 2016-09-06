@@ -1,3 +1,19 @@
+/*******************************************************************************
+
+filename    FrameWork.h
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+Implementation file that controls framework. It manages window and other 
+things.
+
+*******************************************************************************/
+
 #include "FrameWork.h"
 #include "SystemDef.h"
 

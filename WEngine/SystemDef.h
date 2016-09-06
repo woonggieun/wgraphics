@@ -1,3 +1,19 @@
+/*******************************************************************************
+
+filename    SystemDef.h
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+It containts some system values such like screen widht, height, window
+position etc. It may be changed later.
+
+*******************************************************************************/
+
 #ifndef SYSTEMDEF_H
 #define SYSTEMDEF_H
 

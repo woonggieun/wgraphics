@@ -1,3 +1,19 @@
+/*******************************************************************************
+
+filename    Graphics.cpp
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+Graphics class which manages graphics part such as directX 11 device,
+device context and so on.
+
+*******************************************************************************/
+
 #include "Graphics.h"
 
 namespace WE

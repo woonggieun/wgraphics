@@ -1,3 +1,19 @@
+/*******************************************************************************
+
+filename    Graphics.h
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+Header file for implementations of functions that manages about graphics
+part of this engine.
+
+*******************************************************************************/
+
 #ifndef GRAPHICS_H
 #define GRAPHICS_H
 

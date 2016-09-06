@@ -1,3 +1,18 @@
+/*******************************************************************************
+
+filename    Debug.cpp 
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+Debugging tools such as like assertion, creating console and so on.
+
+*******************************************************************************/
+
 #include "Debug.h"
 #include <sstream> //For stringstream class
 #include <string>

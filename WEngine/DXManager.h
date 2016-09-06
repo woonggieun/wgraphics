@@ -1,3 +1,18 @@
+/*******************************************************************************
+
+filename    DXManager.h
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+Header file for implementing DXManager.
+
+*******************************************************************************/
+
 #ifndef DXMANAGER_H 
 #define DXMANAGER_H
 

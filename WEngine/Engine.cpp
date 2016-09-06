@@ -1,3 +1,19 @@
+/*******************************************************************************
+
+filename    Engine.cpp
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+Main engine which will contain any other parts of engine such as 
+graphics physics and so on.
+
+*******************************************************************************/
+
 #include "Engine.h"
 
 Engine* Engine::m_instance = NULL;
@@ -15,6 +31,7 @@ Engine::~Engine(void)
 		m_graphics = NULL;
 	}
 }
+
 
 bool Engine::InitializeGraphics(HWND hwnd)
 {

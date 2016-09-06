@@ -1,3 +1,18 @@
+/*******************************************************************************
+
+filename    Main.cpp
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+It containts main function to run game engine.
+
+*******************************************************************************/
+
 #if defined(DEBUG) | defined (_DEBUG)
 #define CRTDEBG_MAP_ALLOC
 #include <cstdlib>

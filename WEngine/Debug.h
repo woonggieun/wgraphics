@@ -1,3 +1,18 @@
+/*******************************************************************************
+
+filename    Debug.h 
+
+author      Woonggi Eun
+
+email       dmsdndre@gmail.com
+
+date        Sep.06.2016
+
+Brief Description:
+Header file for implementing debugging functions.
+
+*******************************************************************************/
+
 #define WIN32_LEAN_AND_MEAN
 
 #if defined(DEBUG) | defined(_DEBUG)
