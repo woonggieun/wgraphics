@@ -24,7 +24,7 @@ position etc. It may be changed later.
 
 const float SCREEN_DEPTH = 1000.f;
 const float SCREEN_NEAR  = 0.1f;
-const bool FULL_SCREEN = false;
+const bool FULL_SCREEN   = false;
 const bool VSYNC_ENABLED = false;
 
 

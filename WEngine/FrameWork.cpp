@@ -176,6 +176,11 @@ namespace WE
 
 			switch (msg)
 			{
+			case WM_KEYDOWN:
+			    {
+					PostQuitMessage(0);
+					DestroyWindow(win);
+			    }break;
 			case WM_PAINT:
 				{
 					hdc = BeginPaint(win, &ps);
