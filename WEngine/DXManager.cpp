@@ -561,6 +561,9 @@ namespace WE
             D3D11_BLEND_DESC blendStateDesc;
             HRESULT result;
 
+			//clear the blend state description
+			ZeroMemory(&blendStateDesc, sizeof(D3D11_BLEND_DESC));
+
             //Initialize / clear description
             blendStateDesc.RenderTarget[0].BlendEnable = TRUE;
             blendStateDesc.RenderTarget[0].SrcBlend = D3D11_BLEND_SRC_ALPHA;

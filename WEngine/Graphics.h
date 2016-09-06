@@ -29,6 +29,8 @@ namespace WE
 			ID3D11Device* GetDevice              (void);
 			ID3D11DeviceContext* GetDeviceContext(void);
 
+			void SetHWND(HWND hwnd);
+
 		private:
 			DXManager* m_dxManager;
 			HWND       m_hwnd;

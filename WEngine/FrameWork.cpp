@@ -34,6 +34,13 @@ namespace WE
 				return false;
 			}
 
+			if (!Engine::GetEngine()->
+				Initialize(m_hInstance, 
+				Engine::GetEngine()->GetGraphics()->GetHWND()))
+			{
+				return false;
+			}
+
 			return true;
 		}
 
@@ -53,6 +60,7 @@ namespace WE
 				else
 				{
 					//update & render functions
+					Engine::GetEngine()->Run();
 				}
 			}
 
@@ -118,10 +126,25 @@ namespace WE
 			if (hwnd == NULL)
 			{
 				MessageBox(NULL, "CreateWindowEX() failed", "Error", MB_OK);
+				Engine::GetEngine()->Release();
 				PostQuitMessage(0);
 
 				return false;
 			}
+
+			if (!Engine::GetEngine()->InitializeGraphics(hwnd))
+			{
+				MessageBox(hwnd, "Could not initialize DirectX 11", "Error", MB_OK);
+				Engine::GetEngine()->Release();
+				PostQuitMessage(0);
+				UnregisterClass(m_applicationName, m_hInstance);
+				m_hInstance = NULL;
+				DestroyWindow(hwnd);
+
+				return false;
+			}
+
+			Engine::GetEngine()->GetGraphics()->SetHWND(hwnd);
 			
 			ShowWindow(hwnd, SW_SHOW);
 			SetForegroundWindow(hwnd);

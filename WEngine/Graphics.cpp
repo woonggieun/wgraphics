@@ -77,7 +77,11 @@ namespace WE
 		{
 			return m_dxManager->GetDeviceContext();
 		}
-
+		
+		void Graphics::SetHWND(HWND hwnd)
+		{
+			m_hwnd = hwnd;
+		}
 
 	}
 }

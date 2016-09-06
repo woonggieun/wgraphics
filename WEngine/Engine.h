@@ -14,6 +14,7 @@ public:
 
 	void Release(void);
 
+	WE::Graphics::Graphics* GetGraphics(void);
 	static Engine* GetEngine(void);
 
 private:

@@ -7,7 +7,6 @@ Engine::Engine(void)
 	m_graphics = NULL;
 }
 
-
 Engine::~Engine(void)
 {
 	if (m_graphics)
@@ -44,12 +43,11 @@ void Engine::Release(void)
 		delete m_instance;
 		m_instance = NULL;
 	}
+}
 
-	if (m_graphics)
-	{
-		delete m_graphics;
-		m_graphics = NULL;
-	}
+WE::Graphics::Graphics* Engine::GetGraphics(void)
+{
+	return m_graphics;
 }
 
 Engine* Engine::GetEngine(void)
